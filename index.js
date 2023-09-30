@@ -38,17 +38,6 @@ function chooseOperation(op) {
     updateDisplay();
 }
 
-function negate() {
-    currentOperand = (parseFloat(currentOperand) * -1).toString();
-    updateDisplay();
-}
-
-function percentage() {
-    currentOperand = (parseFloat(currentOperand) / 100).toString();
-    updateDisplay();
-}
-
-
 function compute() {
     let result;
     const prev = parseFloat(previousOperand);
@@ -104,12 +93,6 @@ document.querySelectorAll('.calculadora button').forEach(button => {
                 break;
             case "C":
                 backspace();
-                break;
-            case '+/-':
-                negate();
-                break;
-            case '%':
-                percentage();
                 break;
             case '=':
                 compute();
