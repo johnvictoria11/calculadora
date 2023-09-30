@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #3A383A;
+}
+
+.titulo{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #34D834;
+    font-size: 25px;
+    margin-top: 5%;
+    text-shadow: 20px 15px 7px black;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 33px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+    color: white;
+    
+}
+
+#display-actual {
+    font-size: 1.5em;
+}
+
+#display-anterior {
+    font-size: 2em;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #2C272C;
+    padding: 15px;
+    border-radius: 33px;
+    box-shadow: 15px 10px 0px 5px black;
+}
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 33px;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #B7B6B6;
+}
+button:hover{
+    background-color: #4A444A;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
